@@ -13,6 +13,10 @@ Supervisor::Supervisor(string pUsuario, string pCorreo, string pPassword, int co
 
 int Supervisor::getContador(){return contador;}
 
+Supervisor::~Supervisor(){
+  
+}
+
 void Supervisor::toString(){
   stringstream ss;
   ss << Persona::toString() << "Las veces que el programa ha estrado es: " << contador << endl;

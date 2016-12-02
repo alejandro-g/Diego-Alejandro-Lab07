@@ -14,6 +14,10 @@ Manager::Manager(string pUsuario, string pCorreo, string pPassword, double pSuel
 
 double Manager::getSueldo(){return sueldo;}
 
+Manager::~Manager(){
+  
+}
+
 void Manager::toString(){
   stringstream ss;
   ss << Persona::toString() << "Su sueldo es: " << sueldo << endl;

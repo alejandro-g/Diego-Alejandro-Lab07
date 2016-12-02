@@ -14,6 +14,10 @@ Intern::Intern(string pUsuario, string pCorreo, string pPassword, int pDias):Per
 
 int Intern::getDias(){return dias;}
 
+Intern::~Intern(){
+  
+}
+
 void Intern::toString(){
   stringstream ss;
   ss << Persona::toString() << "Numero de dias en los que estara: " << dias << endl;
