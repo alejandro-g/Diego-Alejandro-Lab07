@@ -2,8 +2,15 @@
 #include <iostream>
 
 using std::string;
+using std::stringstream;
 
-Persona::Persona(){
+Persona::Persona(string pUsuario, string pCorreo, string pPassword){
+  usuario = pUsario;
+  correo = pCorreo;
+  password = pPassword;
+}
+
+Persona::~Persona(){
 
 }
 
@@ -29,4 +36,11 @@ void Persona::setPassword(string pPassword){
 
 string Persona::getPassword(){
   return password;
+}
+
+string Persona::toString(){
+  stringstream ss;
+  ss << "Usario: " << usuario << endl << "Correo: " << correo << endl << "Password: " << password << endl;
+  cout << ss;
+  return ss.str();
 }

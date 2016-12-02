@@ -11,12 +11,15 @@ class Persona{
     string password;
   public:
     Persona();
+    Persona(string, string, string);
+    ~Persona();
     void setUsuario(string);
     string getUsuario();
     void setCorreo(string);
     string getCorreo();
     void setPassword(string);
     string getPassword();
+    string toString();
 
 };
 #endif

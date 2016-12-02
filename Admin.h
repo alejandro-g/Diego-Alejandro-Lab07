@@ -1,6 +1,8 @@
 #include <iostream>
 #ifndef ADMIN_H
 #define ADMIN_H
+#include "Persona.h"
+
 
 using std::string;
 
@@ -9,5 +11,5 @@ class Admin : public Persona{
     string date;
 
   public:
-    
+
 }
