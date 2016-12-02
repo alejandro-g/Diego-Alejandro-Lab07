@@ -11,5 +11,11 @@ class Admin : public Persona{
     string date;
 
   public:
+    Admin(string, string, string, string);
+    ~Admin();
+    void setDate(string);
+    string getDate();
+    void toString();
 
-}
+};
+#endif

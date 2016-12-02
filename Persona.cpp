@@ -1,11 +1,14 @@
 #include "Persona.h"
 #include <iostream>
+#include <sstream>
 
 using std::string;
 using std::stringstream;
+using std::endl;
+using std::cout;
 
 Persona::Persona(string pUsuario, string pCorreo, string pPassword){
-  usuario = pUsario;
+  usuario = pUsuario;
   correo = pCorreo;
   password = pPassword;
 }
@@ -15,7 +18,7 @@ Persona::~Persona(){
 }
 
 void Persona::setUsuario(string pUsario){
-  usario = pUsario;
+  usuario = pUsario;
 }
 
 string Persona::getUsuario(){
@@ -27,7 +30,7 @@ void Persona::setCorreo(string pCorreo){
 }
 
 string Persona::getCorreo(){
-  return correol;
+  return correo;
 }
 
 void Persona::setPassword(string pPassword){

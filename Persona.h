@@ -10,7 +10,6 @@ class Persona{
     string correo;
     string password;
   public:
-    Persona();
     Persona(string, string, string);
     ~Persona();
     void setUsuario(string);
