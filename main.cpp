@@ -105,6 +105,11 @@ do{
       }
     }
 
+    ofstream myFile;
+    myFile.open("Usuarios.txt");
+    myFile << "Usuarios en lista";
+    myFile.close();
+
 }while(opcion > 0 && opcion < 3);
 
 }
